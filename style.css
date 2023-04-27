@@ -1,0 +1,26 @@
+h1{
+    color: aqua;
+}
+#nuris{
+    color: red;
+
+}
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 40px #000 solid;
+    width: 50;
+    height: 40;
+    border-width: 20;
+    border-radius: 30;
+    background-color: aqua;
+    border-style: double;
+
+
+}
+a{
+    text-decoration: none;
+}

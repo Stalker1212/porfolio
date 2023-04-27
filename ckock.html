@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .spinner{
+            border: o 0.2em solid purple;
+            width: 10em;
+            height: 5em;
+            font-size: 20px;
+            position: relative;
+            
+            
+        }
+        .spinner::before,.spinner::after{
+            position: absolute;
+            left: 50%;
+            top:20%;
+            height: 30%;
+            width: 0.2em;
+            background: purple;
+            content: '';
+            animation: clock-hand 5s infinite;
+                         line-break: auto;
+            border-radius: 0.1em;
+            transform-origin: bottom center;
+
+
+        }
+        @keyframes clock-hand{
+            0%{
+                transform:rotate(0);
+
+            }
+            100%{
+                transform: rotate(1turn);
+            }
+        }
+        .spinner::after{
+            top:10%;
+            height: 40%;
+            animation: clock-hand 1s infinite;
+                      line-height: 300;}
+    </style>
+</head>
+<body>
+    <div class="spinner"></div>
+    
+</body>
+</html>
